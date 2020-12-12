@@ -40,7 +40,7 @@
  * taps into the many layout options that flextile-deluxe offers to produce a window
  * title section in the bar that is representative of what is shown on screen.
  */
-#define BAR_FLEXWINTITLE_PATCH 1
+#define BAR_FLEXWINTITLE_PATCH 0
 
 /* Show layout symbol in bar */
 #define BAR_LTSYMBOL_PATCH 1
@@ -61,12 +61,12 @@
  * https://gitlab.com/udiboy1209-suckless/dwm/-/commit/071f5063e8ac4280666828179f92788d893eea40#4b1a539194be7467cefbda22f675a3b7c19ceca7
  * https://dwm.suckless.org/patches/statuscolors/
  */
-#define BAR_POWERLINE_STATUS_PATCH 1
+#define BAR_POWERLINE_STATUS_PATCH 0
 
 /* Adds powerline arrows for the tags.
  * https://gitlab.com/udiboy1209-suckless/dwm/-/commit/071f5063e8ac4280666828179f92788d893eea40#4b1a539194be7467cefbda22f675a3b7c19ceca7
  */
-#define BAR_POWERLINE_TAGS_PATCH 1
+#define BAR_POWERLINE_TAGS_PATCH 0
 
 /* Alters the tags powerline to use forward slash instead of arrows */
 #define BAR_POWERLINE_TAGS_SLASH_PATCH 0
@@ -259,7 +259,7 @@
 /* This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.
  * https://dwm.suckless.org/patches/hide_vacant_tags/
  */
-#define BAR_HIDEVACANTTAGS_PATCH 1
+#define BAR_HIDEVACANTTAGS_PATCH 0
 
 /* With this patch dwm's built-in status bar is only shown when HOLDKEY is pressed
  * and the bar will now overlay the display.
@@ -1149,4 +1149,4 @@
 /* Monocle layout (default).
  * This can be optionally disabled in favour of other layouts.
  */
-#define MONOCLE_LAYOUT 1
+#define MONOCLE_LAYOUT 0

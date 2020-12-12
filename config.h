@@ -72,7 +72,7 @@ static int fakefsindicatortype           = INDICATOR_PLUS;
 static int floatfakefsindicatortype      = INDICATOR_PLUS_AND_LARGER_SQUARE;
 #endif // FAKEFULLSCREEN_CLIENT_PATCH
 #if ONLYQUITONEMPTY_PATCH
-static const int quit_empty_window_count = 2;   /* only allow dwm to quit if no windows are open, value here represents number of deamons */
+static const int quit_empty_window_count = 200;   /* only allow dwm to quit if no windows are open, value here represents number of deamons */
 #endif // ONLYQUITONEMPTY_PATCH
 #if BAR_EXTRASTATUS_PATCH
 static const char statussep              = ';'; /* separator between status bars */
@@ -853,7 +853,7 @@ static Key keys[] = {
 	#if BAR_WINTITLEACTIONS_PATCH
 	{ MODKEY|ControlMask,           XK_z,          showhideclient,         {0} },
 	#endif // BAR_WINTITLEACTIONS_PATCH
-	{ MODKEY,                       XK_x,          killclient,             {0} },
+	{ MODKEY,                       XK_q,          killclient,             {0} },
 	#if KILLUNSEL_PATCH
 	{ MODKEY|ShiftMask,             XK_x,          killunsel,              {0} },
 	#endif // KILLUNSEL_PATCH
@@ -937,9 +937,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_0,          view,                   {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,          tag,                    {.ui = ~0 } },
 	#endif // SCRATCHPAD_ALT_1_PATCH
-	{ MODKEY,                       XK_a,          focusmon,               {.i = -1 } },
+	{ MODKEY,                       XK_u,          focusmon,               {.i = -1 } },
 	{ MODKEY,                       0,             focusmon,               {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_a,          tagmon,                 {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_u,          tagmon,                 {.i = -1 } },
 	{ MODKEY|ShiftMask,             0,             tagmon,                 {.i = +1 } },
 	#if FOCUSADJACENTTAG_PATCH
 	{ MODKEY,                       XK_Left,       viewtoleft,             {0} },
