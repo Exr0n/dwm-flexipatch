@@ -84,12 +84,18 @@ static void (*bartabmonfns[])(Monitor *) = { monocle /* , customlayoutfn */ };
 static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #endif // MONOCLE_LAYOUT
 #endif // BAR_TABGROUPS_PATCH
+//#if BAR_PANGO_PATCH
+//static const char font[]                 = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
+//#else
+//static const char *fonts[]               = { "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18" };
+//#endif // BAR_PANGO_PATCH
+//static const char dmenufont[]            = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
 #if BAR_PANGO_PATCH
-static const char font[]                 = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
+static const char font[]                 = "monospace:size=18";
 #else
-static const char *fonts[]               = { "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18" };
+static const char *fonts[]               = { "monospace:size=18" };
 #endif // BAR_PANGO_PATCH
-static const char dmenufont[]            = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
+static const char dmenufont[]            = "monospace:size=18";
 
 #if BAR_FLEXWINTITLE_PATCH
 static char c000000[]                    = "#000000"; // placeholder value
@@ -405,7 +411,7 @@ static const MonitorRule monrules[] = {
 #else
 static const MonitorRule monrules[] = {
 	/* monitor  layout  mfact  nmaster  showbar  topbar */
-	{  1,       2,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
+	{  0,       2,      -1,    -1,      -1,      -1     }, // use a different layout for the second monitor
 	{  -1,      0,      -1,    -1,      -1,      -1     }, // default
 };
 #endif // PERTAG_PATCH
@@ -461,7 +467,7 @@ static const BarRule barrules[] = {
 	#elif BAR_STATUS_PATCH && BAR_STATUSCMD_PATCH
 	{  0,       0,     BAR_ALIGN_RIGHT,  width_status,            draw_status,            click_statuscmd,         "status" },
 	#elif BAR_STATUS_PATCH
-	{ 'A',      0,     BAR_ALIGN_RIGHT,  width_status,            draw_status,            click_status,            "status" },
+	{ -1,       0,     BAR_ALIGN_RIGHT,  width_status,            draw_status,            click_status,            "status" },
 	#endif // BAR_STATUS2D_PATCH | BAR_STATUSCMD_PATCH
 	#if BAR_FLEXWINTITLE_PATCH
 	{ -1,       0,     BAR_ALIGN_NONE,   width_flexwintitle,      draw_flexwintitle,      click_flexwintitle,      "flexwintitle" },
