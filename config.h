@@ -5,7 +5,7 @@
 static const unsigned int borderpx       = 0;   /* border pixel of windows */
 static const int corner_radius           = 10;
 #else
-static const unsigned int borderpx       = 1;   /* border pixel of windows */
+static const unsigned int borderpx       = 2;   /* border pixel of windows */
 #endif // ROUNDED_CORNERS_PATCH
 static const unsigned int snap           = 32;  /* snap pixel */
 #if SWALLOW_PATCH
@@ -85,11 +85,11 @@ static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #endif // MONOCLE_LAYOUT
 #endif // BAR_TABGROUPS_PATCH
 #if BAR_PANGO_PATCH
-static const char font[]                 = "monospace 16";
+static const char font[]                 = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
 #else
-static const char *fonts[]               = { "monospace:size=16" };
+static const char *fonts[]               = { "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18" };
 #endif // BAR_PANGO_PATCH
-static const char dmenufont[]            = "monospace:size=16";
+static const char dmenufont[]            = "-*-isoveka light-*-r-*-*-*-*-*-*-*-*-*-*:size=18";
 
 #if BAR_FLEXWINTITLE_PATCH
 static char c000000[]                    = "#000000"; // placeholder value
