@@ -2,10 +2,10 @@
 
 /* appearance */
 #if ROUNDED_CORNERS_PATCH
-static const unsigned int borderpx       = 0;   /* border pixel of windows */
+static const unsigned int borderpx       = 3;   /* border pixel of windows */
 static const int corner_radius           = 10;
 #else
-static const unsigned int borderpx       = 2;   /* border pixel of windows */
+static const unsigned int borderpx       = 5;   /* border pixel of windows */
 #endif // ROUNDED_CORNERS_PATCH
 static const unsigned int snap           = 32;  /* snap pixel */
 #if SWALLOW_PATCH
@@ -15,11 +15,11 @@ static const int swallowfloating         = 0;   /* 1 means swallow floating wind
 static int nomodbuttons                  = 1;   /* allow client mouse button bindings that have no modifier */
 #endif // NO_MOD_BUTTONS_PATCH
 #if VANITYGAPS_PATCH
-static const unsigned int gappih         = 10;  /* horiz inner gap between windows */
-static const unsigned int gappiv         = 10;  /* vert inner gap between windows */
+static const unsigned int gappih         = 30;  /* horiz inner gap between windows */
+static const unsigned int gappiv         = 30;  /* vert inner gap between windows */
 static const unsigned int gappoh         = 20;  /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov         = 20;  /* vert outer gap between windows and screen edge */
-static const int smartgaps               = 1;   /* 1 means no outer gap when there is only one window */
+static const int smartgaps               = 0;   /* 1 means no outer gap when there is only one window */
 #endif // VANITYGAPS_PATCH
 #if AUTOSTART_PATCH
 static const char autostartblocksh[]     = "autostart_blocking.sh";
@@ -42,8 +42,8 @@ static const int topbar                  = 0;   /* 0 means bottom bar */
 static const int bar_height              = 0;   /* 0 means derive from font, >= 1 explicit height */
 #endif // BAR_HEIGHT_PATCH
 #if BAR_PADDING_PATCH
-static const int vertpad                 = 10;  /* vertical padding of bar */
-static const int sidepad                 = 10;  /* horizontal padding of bar */
+static const int vertpad                 = 20;  /* vertical padding of bar */
+static const int sidepad                 = 20;  /* horizontal padding of bar */
 #endif // BAR_PADDING_PATCH
 #if FOCUSONCLICK_PATCH
 static const int focusonwheel            = 0;
@@ -53,7 +53,7 @@ static int floatposgrid_x                = 5;  /* float grid columns */
 static int floatposgrid_y                = 5;  /* float grid rows */
 #endif // FLOATPOS_PATCH
 #if BAR_STATUSPADDING_PATCH
-static const int horizpadbar             = 2;   /* horizontal padding for statusbar */
+static const int horizpadbar             = 0;   /* horizontal padding for statusbar */
 static const int vertpadbar              = 0;   /* vertical padding for statusbar */
 #endif // BAR_STATUSPADDING_PATCH
 #if BAR_STATUSBUTTON_PATCH
@@ -106,9 +106,9 @@ static char normbordercolor[]            = "#444444";
 static char normfloatcolor[]             = "#db8fd9";
 
 static char selfgcolor[]                 = "#eeeeee";
-static char selbgcolor[]                 = "#005577";
-static char selbordercolor[]             = "#005577";
-static char selfloatcolor[]              = "#005577";
+static char selbgcolor[]                 = "#326ccc";
+static char selbordercolor[]             = "#326ccc";
+static char selfloatcolor[]              = "#326ccc";
 
 static char titlenormfgcolor[]           = "#bbbbbb";
 static char titlenormbgcolor[]           = "#222222";
@@ -116,9 +116,9 @@ static char titlenormbordercolor[]       = "#444444";
 static char titlenormfloatcolor[]        = "#db8fd9";
 
 static char titleselfgcolor[]            = "#eeeeee";
-static char titleselbgcolor[]            = "#005577";
-static char titleselbordercolor[]        = "#005577";
-static char titleselfloatcolor[]         = "#005577";
+static char titleselbgcolor[]            = "#326ccc";
+static char titleselbordercolor[]        = "#326ccc";
+static char titleselfloatcolor[]         = "#326ccc";
 
 static char tagsnormfgcolor[]            = "#bbbbbb";
 static char tagsnormbgcolor[]            = "#222222";
@@ -126,13 +126,13 @@ static char tagsnormbordercolor[]        = "#444444";
 static char tagsnormfloatcolor[]         = "#db8fd9";
 
 static char tagsselfgcolor[]             = "#eeeeee";
-static char tagsselbgcolor[]             = "#005577";
-static char tagsselbordercolor[]         = "#005577";
-static char tagsselfloatcolor[]          = "#005577";
+static char tagsselbgcolor[]             = "#326ccc";
+static char tagsselbordercolor[]         = "#326ccc";
+static char tagsselfloatcolor[]          = "#326ccc";
 
-static char hidfgcolor[]                 = "#005577";
+static char hidfgcolor[]                 = "#326ccc";
 static char hidbgcolor[]                 = "#222222";
-static char hidbordercolor[]             = "#005577";
+static char hidbordercolor[]             = "#326ccc";
 static char hidfloatcolor[]              = "#f76e0c";
 
 static char urgfgcolor[]                 = "#bbbbbb";
@@ -151,7 +151,7 @@ static char normGRDMbgcolor[]            = "#506600";
 static char normHGRDbgcolor[]            = "#b96600";
 static char normDWDLbgcolor[]            = "#003333";
 static char normSPRLbgcolor[]            = "#333300";
-static char normfloatbgcolor[]           = "#115577";
+static char normfloatbgcolor[]           = "#426ccc";
 static char actTTBbgcolor[]              = "#440000";
 static char actLTRbgcolor[]              = "#440044";
 static char actMONObgcolor[]             = "#000044";
