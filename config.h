@@ -740,7 +740,6 @@ static const char *termcmd[]  = { "/bin/alacritty", NULL };
 static const char *emacscmd[] = { "/bin/emacsclient", "-nc", "-a=''", NULL };
 static const char *browsercmd[] = { "/bin/firefox", NULL };
 static const char *privbrowsercmd[] = { "/bin/brave", "--incognito", NULL };
-static const char *slepcmd[] =  { "/bin/sleep", "1;", "/bin/xset", "dpms", "force", "off", NULL };
 
 #if BAR_STATUSCMD_PATCH && !BAR_DWMBLOCKS_PATCH
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
@@ -766,7 +765,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_n,          spawn,                  {.v = emacscmd } },
 	{ MODKEY|ShiftMask,             XK_t,          spawn,                  {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_h,          spawn,                  {.v = browsercmd } },
-    { MODKEY|ShiftMask,             XK_s,          spawn,                  {.v = slepcmd } },
     { MODKEY|ShiftMask,             XK_d,          spawn,                  {.v = privbrowsercmd } },
 	{ MODKEY|ShiftMask,             XK_b,          togglebar,              {0} },
 	#if FOCUSMASTER_PATCH
