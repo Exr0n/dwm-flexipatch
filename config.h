@@ -736,7 +736,7 @@ static const char *dmenucmd[] = {
 	#endif // BAR_DMENUMATCHTOP_PATCH
 	NULL
 };
-//static const char *termcmd[]  = { "/bin/alacritty", NULL };
+static const char *termcmd[]  = { "/bin/alacritty", NULL };
 //static const char *emacscmd[] = { "/bin/emacsclient", "-nc", "-a=''", NULL };
 //static const char *browsercmd[] = { "/bin/firefox", NULL };
 //static const char *privbrowsercmd[] = { "/bin/brave", "--incognito", NULL };
@@ -760,7 +760,7 @@ static Key keys[] = {
 	#if KEYMODES_PATCH
 	{ MODKEY,                       XK_Escape,     setkeymode,             {.ui = COMMANDMODE} },
 	#endif // KEYMODES_PATCH
-	{ MODKEY|ShiftMask,             XK_space,      spawn,                  {.v = dmenucmd } },
+	//{ MODKEY|ShiftMask,             XK_space,      spawn,                  {.v = dmenucmd } },
 	//{ MODKEY|ShiftMask,             XK_Return,     spawn,                  {.v = termcmd } },
 	//{ MODKEY|ShiftMask,             XK_n,          spawn,                  {.v = emacscmd } },
 	//{ MODKEY|ShiftMask,             XK_t,          spawn,                  {.v = termcmd } },
