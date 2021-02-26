@@ -760,7 +760,7 @@ static Key keys[] = {
 	#if KEYMODES_PATCH
 	{ MODKEY,                       XK_Escape,     setkeymode,             {.ui = COMMANDMODE} },
 	#endif // KEYMODES_PATCH
-	//{ MODKEY|ShiftMask,             XK_space,      spawn,                  {.v = dmenucmd } },
+    { MODKEY|ShiftMask,             XK_space,      spawn,                  {.v = dmenucmd } },
 	//{ MODKEY|ShiftMask,             XK_Return,     spawn,                  {.v = termcmd } },
 	//{ MODKEY|ShiftMask,             XK_n,          spawn,                  {.v = emacscmd } },
 	//{ MODKEY|ShiftMask,             XK_t,          spawn,                  {.v = termcmd } },
