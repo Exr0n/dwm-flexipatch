@@ -347,9 +347,9 @@ static Sp scratchpads[] = {
  * them. This works seamlessly with alternative tags and alttagsdecoration patches.
  */
 static char *tagicons[][NUMTAGS] = {
-	[DEFAULT_TAGS]        = { "A", "B", "C", "D", "1", "2", "3", "4", "5" },
-	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I" },
-	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>" },
+	[DEFAULT_TAGS]        = { "A", "B", "C", "D", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" },
+	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "6", "7", "8", "9", "0" },
+	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>", "<6>", "<7>", "<8>", "<9>", "<6>", "<7>", "<8>", "<9>", "<0>" },
 };
 
 #if BAR_TAGGRID_PATCH
@@ -1110,6 +1110,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_3,                                  6)
 	TAGKEYS(                        XK_4,                                  7)
 	TAGKEYS(                        XK_5,                                  8)
+	TAGKEYS(                        XK_6,                                  9)
+	TAGKEYS(                        XK_7,                                  10)
+	TAGKEYS(                        XK_8,                                  11)
+	TAGKEYS(                        XK_9,                                  12)
+	TAGKEYS(                        XK_0,                                  13)
 };
 
 #if KEYMODES_PATCH
